@@ -15,6 +15,8 @@
 		D161EDE81F907425003AA990 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D161EDE71F9073BA003AA990 /* GoogleService-Info.plist */; };
 		D161EDEA1F907A8F003AA990 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161EDE91F907A8F003AA990 /* ShadowView.swift */; };
 		D161EDEC1F907DDE003AA990 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161EDEB1F907DDE003AA990 /* AuthService.swift */; };
+		D161EDEE1F90A1EC003AA990 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161EDED1F90A1EC003AA990 /* MeVC.swift */; };
+		D161EDF01F90AEBC003AA990 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161EDEF1F90AEBC003AA990 /* CreatePostVC.swift */; };
 		D1F620BD1F8FBBE200AC98D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F620BC1F8FBBE200AC98D7 /* AppDelegate.swift */; };
 		D1F620BF1F8FBBE200AC98D7 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F620BE1F8FBBE200AC98D7 /* FeedVC.swift */; };
 		D1F620C11F8FBBE200AC98D7 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F620C01F8FBBE200AC98D7 /* GroupVC.swift */; };
@@ -34,6 +36,8 @@
 		D161EDE71F9073BA003AA990 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D161EDE91F907A8F003AA990 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		D161EDEB1F907DDE003AA990 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D161EDED1F90A1EC003AA990 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
+		D161EDEF1F90AEBC003AA990 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		D1F620B91F8FBBE200AC98D7 /* Social App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F620BC1F8FBBE200AC98D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F620BE1F8FBBE200AC98D7 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				D1F620C01F8FBBE200AC98D7 /* GroupVC.swift */,
 				D161EDDF1F906FD3003AA990 /* AuthVC.swift */,
 				D161EDE11F907003003AA990 /* LoginVC.swift */,
+				D161EDED1F90A1EC003AA990 /* MeVC.swift */,
+				D161EDEF1F90AEBC003AA990 /* CreatePostVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,11 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D161EDE01F906FD3003AA990 /* AuthVC.swift in Sources */,
+				D161EDEE1F90A1EC003AA990 /* MeVC.swift in Sources */,
 				D1F620C11F8FBBE200AC98D7 /* GroupVC.swift in Sources */,
 				D161EDE21F907003003AA990 /* LoginVC.swift in Sources */,
 				D161EDEC1F907DDE003AA990 /* AuthService.swift in Sources */,
 				D1F620BD1F8FBBE200AC98D7 /* AppDelegate.swift in Sources */,
 				D161EDEA1F907A8F003AA990 /* ShadowView.swift in Sources */,
+				D161EDF01F90AEBC003AA990 /* CreatePostVC.swift in Sources */,
 				D1F620BF1F8FBBE200AC98D7 /* FeedVC.swift in Sources */,
 				D161EDE41F907047003AA990 /* InsetTextField.swift in Sources */,
 				D161EDDE1F905F55003AA990 /* DataService.swift in Sources */,
