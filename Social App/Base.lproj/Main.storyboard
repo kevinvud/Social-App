@@ -516,7 +516,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QT-a3-IDL">
-                                        <rect key="frame" x="315" y="27" width="51" height="36"/>
+                                        <rect key="frame" x="375" y="27" width="51" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="Fip-OI-ihc"/>
                                             <constraint firstAttribute="width" constant="51" id="x99-3H-ugW"/>
@@ -528,7 +528,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_newGroup" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ey-sc-kx6">
-                                        <rect key="frame" x="134" y="33.5" width="108.5" height="23.5"/>
+                                        <rect key="frame" x="187.5" y="33.5" width="108.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -557,16 +557,16 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="l7R-f6-5xM">
-                                <rect key="frame" x="20" y="90" width="335" height="557"/>
+                                <rect key="frame" x="20" y="90" width="375" height="557"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SB-rx-wn7">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="14"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="14"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="group name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-C2-Bad" customClass="InsetTextField" customModule="Social_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="17" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="17" width="375" height="40"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Kcc-QH-QkG"/>
@@ -576,13 +576,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMj-VK-V1b">
-                                        <rect key="frame" x="0.0" y="60" width="335" height="14"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="14"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Oq-JP-zrn" customClass="InsetTextField" customModule="Social_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="77" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="77" width="375" height="40"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="QTj-eT-E2D"/>
@@ -591,14 +591,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to your group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlN-cn-BEf">
-                                        <rect key="frame" x="0.0" y="120" width="335" height="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to your group" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="OlN-cn-BEf">
+                                        <rect key="frame" x="0.0" y="120" width="375" height="14"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="add group member here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-yd-9TI" customClass="InsetTextField" customModule="Social_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="137" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="137" width="375" height="50"/>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="uFR-oA-JxX"/>
@@ -608,14 +608,14 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qjs-W2-4c9">
-                                        <rect key="frame" x="0.0" y="190" width="335" height="367"/>
+                                        <rect key="frame" x="0.0" y="190" width="375" height="367"/>
                                         <color key="backgroundColor" red="0.59999999999999998" green="0.84313725490000002" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="userCell" rowHeight="55" id="QlE-lk-rJw" customClass="UserCell" customModule="Social_App" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="335" height="55"/>
+                                                <rect key="frame" x="0.0" y="28" width="375" height="55"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QlE-lk-rJw" id="39p-xD-q7x">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="54.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="Gd0-GS-tkw">
@@ -625,13 +625,13 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@abc.com" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="LhE-se-xya">
-                                                            <rect key="frame" x="64" y="18" width="223" height="19"/>
+                                                            <rect key="frame" x="64" y="18" width="263" height="19"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-5t-U26">
-                                                            <rect key="frame" x="297" y="20.5" width="20" height="14"/>
+                                                            <rect key="frame" x="337" y="20.5" width="20" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="20" id="80p-zt-bkc"/>
                                                             </constraints>
@@ -675,6 +675,8 @@
                     <connections>
                         <outlet property="addPeopleField" destination="QQa-yd-9TI" id="BAS-1Y-juF"/>
                         <outlet property="descriptionField" destination="0Oq-JP-zrn" id="wt3-xi-yI1"/>
+                        <outlet property="doneButton" destination="6QT-a3-IDL" id="UCf-dc-Wme"/>
+                        <outlet property="groupMemberLabel" destination="OlN-cn-BEf" id="WuQ-up-ggR"/>
                         <outlet property="groupNameField" destination="Dzm-C2-Bad" id="qBM-7F-9wj"/>
                         <outlet property="tableView" destination="qjs-W2-4c9" id="k0x-cO-fX3"/>
                     </connections>
