@@ -18,6 +18,7 @@ class CreatePostVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
+        sendButton.bindToKeyboard()
 
     }
     @IBAction func sendButtonPressed(_ sender: Any) {
@@ -34,7 +35,10 @@ class CreatePostVC: UIViewController {
         }
     }
     
-    @IBOutlet weak var closeButtonPressed: UIButton!
+    @IBAction func closeButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
 }
 

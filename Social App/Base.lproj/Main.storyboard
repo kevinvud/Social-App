@@ -33,6 +33,9 @@
                                             <constraint firstAttribute="width" constant="30" id="TZd-Wd-u8A"/>
                                         </constraints>
                                         <state key="normal" image="compose"/>
+                                        <connections>
+                                            <segue destination="AAg-gd-ClC" kind="presentation" id="Rec-79-tM1"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_feed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf2-JB-CqD">
                                         <rect key="frame" x="158" y="33.5" width="60.5" height="23.5"/>
@@ -103,7 +106,6 @@
                                         <state key="normal" image="addNewIcon"/>
                                         <connections>
                                             <action selector="signoutButtonPressed:" destination="lOi-RR-5NN" eventType="touchUpInside" id="oQR-cP-dSs"/>
-                                            <segue destination="AAg-gd-ClC" kind="presentation" id="thn-vx-ias"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDc-8G-hfV">
@@ -215,7 +217,7 @@
                                         </constraints>
                                         <state key="normal" image="close"/>
                                         <connections>
-                                            <action selector="signoutButtonPressed:" destination="lOi-RR-5NN" eventType="touchUpInside" id="3iQ-VY-L3N"/>
+                                            <action selector="closeButtonPressed:" destination="AAg-gd-ClC" eventType="touchUpInside" id="5I3-JC-ugS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -228,7 +230,7 @@
                                     <constraint firstItem="liu-ao-YfI" firstAttribute="top" secondItem="QKV-Qt-EZS" secondAttribute="top" constant="30" id="s5l-yu-xcU"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-vJ-Mim">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-vJ-Mim">
                                 <rect key="frame" x="16" y="90" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Ibv-85-rs5"/>
@@ -285,7 +287,6 @@
                         <viewLayoutGuide key="safeArea" id="thi-Ul-Kyb"/>
                     </view>
                     <connections>
-                        <outlet property="closeButtonPressed" destination="liu-ao-YfI" id="KgL-hW-4F2"/>
                         <outlet property="emailLabel" destination="j15-fh-Pfb" id="GrA-PM-XDF"/>
                         <outlet property="profileImage" destination="aA0-vJ-Mim" id="gfU-Vc-aAw"/>
                         <outlet property="sendButton" destination="EWP-o3-iQ8" id="mwi-rO-gbF"/>
