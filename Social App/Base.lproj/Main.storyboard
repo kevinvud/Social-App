@@ -57,13 +57,55 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="VXQ-rm-OK2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="feedCell" rowHeight="100" id="VXQ-rm-OK2" customClass="FeedCell" customModule="Social_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VXQ-rm-OK2" id="zBQ-wq-eF1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="DA8-X4-jrM">
+                                                    <rect key="frame" x="18" y="18" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="21a-dY-zLc"/>
+                                                        <constraint firstAttribute="width" constant="50" id="6Tf-I2-xKt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="A3W-Dd-yL2">
+                                                    <rect key="frame" x="78" y="18" width="279" height="63.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@test.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxo-aC-LxS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="279" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="2cg-lB-4ow"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.32549019610000002" green="0.41960784309999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message content..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="UH3-Ky-YRu">
+                                                            <rect key="frame" x="0.0" y="26" width="279" height="37.5"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                            <color key="textColor" red="0.32549019610000002" green="0.41960784309999999" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="A3W-Dd-yL2" secondAttribute="trailing" constant="10" id="2KK-ZG-M0c"/>
+                                                <constraint firstItem="A3W-Dd-yL2" firstAttribute="leading" secondItem="DA8-X4-jrM" secondAttribute="trailing" constant="10" id="7vB-Ra-b6u"/>
+                                                <constraint firstItem="A3W-Dd-yL2" firstAttribute="top" secondItem="zBQ-wq-eF1" secondAttribute="topMargin" constant="10" id="BfV-ua-6t9"/>
+                                                <constraint firstItem="DA8-X4-jrM" firstAttribute="leading" secondItem="zBQ-wq-eF1" secondAttribute="leadingMargin" constant="10" id="lpB-1D-90M"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="A3W-Dd-yL2" secondAttribute="bottom" constant="10" id="qqB-Vc-MUD"/>
+                                                <constraint firstItem="DA8-X4-jrM" firstAttribute="top" secondItem="zBQ-wq-eF1" secondAttribute="topMargin" constant="10" id="sdT-3n-HvV"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailLabel" destination="Nxo-aC-LxS" id="D3x-ok-uM6"/>
+                                            <outlet property="messageLabel" destination="UH3-Ky-YRu" id="xbj-Ha-oWf"/>
+                                            <outlet property="profileImage" destination="DA8-X4-jrM" id="5Ox-Nv-oAG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -81,6 +123,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="FCo-hM-NV7" id="fK7-gO-Dt0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +148,7 @@
                                             <constraint firstAttribute="height" constant="30" id="RgS-41-mbt"/>
                                             <constraint firstAttribute="width" constant="30" id="igb-FI-cMS"/>
                                         </constraints>
-                                        <state key="normal" image="addNewIcon"/>
+                                        <state key="normal" image="logoutIcon"/>
                                         <connections>
                                             <action selector="signoutButtonPressed:" destination="lOi-RR-5NN" eventType="touchUpInside" id="oQR-cP-dSs"/>
                                         </connections>
@@ -581,6 +626,7 @@
         <image name="feed-tabIcon" width="25" height="21"/>
         <image name="groups-tabIcon" width="25" height="23"/>
         <image name="loginBGImage" width="375" height="284"/>
+        <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
     </resources>
