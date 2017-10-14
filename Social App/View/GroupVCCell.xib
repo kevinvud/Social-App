@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Menlo.ttc">
+            <string>Menlo-Bold</string>
+            <string>Menlo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCellXib" rowHeight="153" id="KGk-i7-Jjw" customClass="GroupVCCell" customModule="Social_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="152.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xvj-9U-MKV">
+                        <rect key="frame" x="13" y="13" width="323" height="36.5"/>
+                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="efP-WQ-Fuo">
+                        <rect key="frame" x="23" y="59.5" width="313" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="jMz-ZN-wuZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member #:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-cY-s9a">
+                        <rect key="frame" x="23" y="119.5" width="313" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jKr-q4-nyx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="efP-WQ-Fuo" firstAttribute="top" secondItem="xvj-9U-MKV" secondAttribute="bottom" constant="10" id="2MN-JG-0h0"/>
+                    <constraint firstItem="xvj-9U-MKV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="3AE-1n-LB1"/>
+                    <constraint firstItem="hN4-cY-s9a" firstAttribute="top" secondItem="efP-WQ-Fuo" secondAttribute="bottom" constant="10" id="Icx-9L-UyR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hN4-cY-s9a" secondAttribute="trailing" constant="10" id="K5h-rH-i9D"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="efP-WQ-Fuo" secondAttribute="trailing" constant="10" id="LLa-Sz-qxW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xvj-9U-MKV" secondAttribute="trailing" constant="10" id="WWd-Hl-Vyg"/>
+                    <constraint firstItem="efP-WQ-Fuo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="XmH-eq-fLJ"/>
+                    <constraint firstItem="hN4-cY-s9a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="lAw-Ey-w50"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hN4-cY-s9a" secondAttribute="bottom" constant="5" id="orR-Sv-wIG"/>
+                    <constraint firstItem="xvj-9U-MKV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="s0k-lb-jcK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="groupDescriptionLabel" destination="efP-WQ-Fuo" id="aWK-TZ-hNx"/>
+                <outlet property="groupMembersLabel" destination="hN4-cY-s9a" id="0hF-zr-tcQ"/>
+                <outlet property="groupTitleLabel" destination="xvj-9U-MKV" id="8tb-1P-dX5"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="26"/>
+        </tableViewCell>
+    </objects>
+</document>
