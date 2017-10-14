@@ -126,6 +126,10 @@ extension CreateGroupVC: UITableViewDataSource, UITableViewDelegate{
 
 extension CreateGroupVC: UITextFieldDelegate{
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        addPeopleField.resignFirstResponder()
+        return true
+    }
     
     
 }

@@ -11,9 +11,7 @@ import UIKit
 extension UIView{
     func bindToKeyboard(){
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(_:)), name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
-        
-        
-        
+ 
     }
     
     @objc func keyboardWillChange(_ notification: NSNotification){
@@ -28,12 +26,17 @@ extension UIView{
         
         let deltaY = endFrame.origin.y - beginningFrame.origin.y
         
-        
         UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: UIViewKeyframeAnimationOptions(rawValue: curve), animations: {
             self.frame.origin.y += deltaY
         }, completion: nil)
+        
+        
     }
     
+    func removeObser(){
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillChangeFrame, object: nil)
+    }
     
     
 }

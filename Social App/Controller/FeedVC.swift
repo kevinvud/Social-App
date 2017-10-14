@@ -20,10 +20,15 @@ class FeedVC: UIViewController {
         
     }
     
+
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+        super.viewDidAppear(false)
         DataService.instance.getAllFeedMessages { (returnedMessageArray) in
-            self.messageArray = returnedMessageArray.reversed()
+            self.messageArray = returnedMessageArray
+//            if self.messageArray.count > 0{
+//                self.tableView.scrollToRow(at: IndexPath(row: self.messageArray.count - 1, section: 0) , at: .bottom, animated: false)
+//
+//            }
             self.tableView.reloadData()
         }
     }
